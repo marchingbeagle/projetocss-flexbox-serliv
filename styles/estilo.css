@@ -1,9 +1,63 @@
 html,
 body {
-    height: 100%;
+  min-height: 100%;
+}
+
+html {
+  background-image: url(../imagens/bg-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  text-align: center;
+  color: white;
+  margin: 90px 0 20px 0;
+}
+
+.header__title {
+  text-transform: uppercase;
+  text-shadow: 0 2px 2px black;
+  font-size: 60px;
+  margin: 0;
+}
+
+.header__description {
+  background-color: rgb(0, 0, 0, 0.6);
+  padding: 18px;
+  display: inline-block;
+  border-bottom: 2px white solid;
+}
+
+.courses {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  width: 860px;
+  margin: 0 auto;
+  gap: 15px;
+  padding: 15px;
+}
+
+.course-tile {
+  flex-grow: 1;
+  flex-basis: 250px;
+}
+
+.course-tile__title {
+  margin: 0;
+  font-size: 20px;
+  background-color: rgb(20, 20, 20);
+  color: white;
+  padding: 5px;
+}
+
+.course-tile__img {
+  display: block;
+  width: 100%;
 }
